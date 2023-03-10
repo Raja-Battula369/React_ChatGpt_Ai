@@ -10,7 +10,8 @@ function App() {
   const [input, setInput] = useState('');
   const [isLoading, setIsLoading] = useState(false);
 
-  const api_key = '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';
+  const api_key = import.meta.env.VITE_Open_AI_Key;
+  console.log(api_key);
   const apiRequestBody = {
     model: 'gpt-3.5-turbo',
     messages: [

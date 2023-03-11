@@ -38,6 +38,17 @@ const Input = ({
 
   return (
     <VStack bgColor="#686968" minH="100vh" p="1rem">
+      <Button
+        color={'white'}
+        alignSelf={'flex-start'}
+        variant={'outline'}
+        onClick={() => {
+          setoption(null);
+          setresult('');
+        }}
+      >
+        Back
+      </Button>
       <Heading
         textDecor={'underline'}
         mb={'2rem'}
